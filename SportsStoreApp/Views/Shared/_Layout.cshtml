@@ -3,10 +3,22 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    @*<link rel="stylesheet"
+        asp-href-include="/lib/bootstarp/dist/**/*.min.css"
+        asp-href-exclude="**/*-reboot*,**/*-grid*" />*@
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
     <title>SportsStore V2</title>
 </head>
 <body>
-    <div>
+<div class="navbar navbar-inverse bg-inverse" role="navigation">
+    <a class="navbar-brand" href="#">SPROTS STORE</a>
+</div>
+<div class="row m-1 p-1">
+    <div id="categories" class="col-3">
+        Put something useful here later
+    </div>
+</div>
+    <div class="col-9">
         @RenderBody()
     </div>
 </body>

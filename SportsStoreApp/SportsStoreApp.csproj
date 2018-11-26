@@ -11,7 +11,14 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.1.1"/>
     <!--<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" version="2.0.0"></DotNetCliToolReference>-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Product\_ViewImports.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
   </ItemGroup>
 
 </Project>
